@@ -218,3 +218,13 @@ exercises.c:58:23: error: ‘newSIZE’ undeclared (first use in this function);
 exercises.c:58:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d9674e6
+Thu 14 Mar 2024 03:12:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:45: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   53 |   int *nuevoArreglo = (int *)malloc(newSize * sizeof(int));
+      |                                             ^
+Compilation failed
+efb49ff
