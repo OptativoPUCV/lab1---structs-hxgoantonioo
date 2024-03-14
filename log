@@ -146,3 +146,23 @@ exercises.c:64:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 387c34b
+Thu 14 Mar 2024 03:06:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:7: error: redefinition of ‘sizeNuevoArreglo’
+   55 |   int sizeNuevoArreglo = 0;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:53:7: note: previous definition of ‘sizeNuevoArreglo’ with type ‘int’
+   53 |   int sizeNuevoArreglo = 0;
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:60:21: error: subscripted value is neither array nor pointer nor vector
+   60 |         nuevoArreglo[sizeNuevoArreglo] = arr[i];
+      |                     ^
+exercises.c:64:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   64 |   return nuevoArreglo;
+      |          ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+68b8aa3
