@@ -57,3 +57,22 @@ Thu 14 Mar 2024 02:55:01 PM UTC:
  tests:  0|5
 total_score: 20/70
 730adaa
+Thu 14 Mar 2024 03:02:31 PM UTC: 
+ exercises.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:3: error: expected ‘,’ or ‘;’ before ‘for’
+   54 |   for (int i = 0; i < size; i++)
+      |   ^~~
+exercises.c:54:19: error: ‘i’ undeclared (first use in this function)
+   54 |   for (int i = 0; i < size; i++)
+      |                   ^
+exercises.c:54:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:54:32: error: expected ‘;’ before ‘)’ token
+   54 |   for (int i = 0; i < size; i++)
+      |                                ^
+      |                                ;
+exercises.c:54:32: error: expected statement before ‘)’ token
+Compilation failed
+1b29874
