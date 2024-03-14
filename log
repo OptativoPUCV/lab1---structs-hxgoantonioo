@@ -30,3 +30,18 @@ exercises.c:32:7: error: unused variable ‘sizeTemp’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 2856e2b
+Thu 14 Mar 2024 02:49:32 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:36:20: error: ‘temp’ undeclared (first use in this function)
+   36 |       arr[i] = arr[temp-1];
+      |                    ^~~~
+exercises.c:36:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:32:7: error: unused variable ‘sizeTemp’ [-Werror=unused-variable]
+   32 |   int sizeTemp = size;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+50efffb
