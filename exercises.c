@@ -50,8 +50,8 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
+  int *nuevoArreglo = (int *)malloc(newSize * sizeof(int));
   int sizeNuevoArreglo = 0;
-  int nuevoArreglo = {sizeNuevoArreglo};
   for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)

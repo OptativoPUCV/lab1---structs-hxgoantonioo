@@ -180,3 +180,13 @@ exercises.c:63:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 7e3c654
+Thu 14 Mar 2024 03:08:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:45: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   53 |   int *nuevoArreglo = (int *)malloc(newSize * sizeof(int));
+      |                                             ^
+Compilation failed
+d3fe385
