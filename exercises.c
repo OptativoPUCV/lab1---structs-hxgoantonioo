@@ -9,14 +9,34 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size) 
+{ 
+  int numeroMayor = 0;
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] > numeroMayor)
+      {
+        numeroMayor = arr[i];
+      }
+    }
+  return numeroMayor; 
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) 
+{
+  int sizeTemp = size;
+  for (int i = 0; i < size; i++)
+    {
+      
+      arr[i] = arr[temp-1];
+      temp--;
+    }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -26,7 +46,11 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
+{
+  
+  return NULL; 
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
