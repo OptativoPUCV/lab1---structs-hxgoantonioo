@@ -190,3 +190,16 @@ exercises.c:53:45: error: invalid operands to binary * (have ‘int *’ and ‘
       |                                             ^
 Compilation failed
 d3fe385
+Thu 14 Mar 2024 03:11:15 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:45: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   53 |   int *nuevoArreglo = (int *)malloc(newSize * sizeof(int));
+      |                                             ^
+exercises.c:58:21: error: array subscript is not an integer
+   58 |         nuevoArreglo[nuevoArreglo] = arr[i];
+      |                     ^
+Compilation failed
+25426f6
