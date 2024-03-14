@@ -45,3 +45,9 @@ exercises.c:32:7: error: unused variable ‘sizeTemp’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 50efffb
+Thu 14 Mar 2024 02:50:13 PM UTC: 
+ exercises.c | 7 -------
+ 1 file changed, 7 deletions(-)
+ tests:  0|6
+total_score: 10/70
+17bd0b1
