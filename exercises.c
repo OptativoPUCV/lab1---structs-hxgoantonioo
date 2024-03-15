@@ -112,6 +112,10 @@ int checkSorted(int arr[], int size)
         {
           orden = -1;
         }
+        else
+        {
+          orden = 0;
+        }
       }
       else
       {
@@ -122,6 +126,25 @@ int checkSorted(int arr[], int size)
             orden = 0;
             return orden;
           }
+          else if (arr[i] == arr[i + 1])
+          {
+            orden = 1;
+          }
+        }
+        else if (orden == 0)
+        {
+          if (arr[i] < arr[i + 1])
+          {
+            orden = 1;
+          }
+          else if (arr[i] > arr[i + 1])
+          {
+            orden = -1;
+          }
+          else
+          {
+            orden = 0;
+          }
         }
         else
         {
@@ -129,6 +152,10 @@ int checkSorted(int arr[], int size)
           {
             orden = 0;
             return orden;
+          }
+          else if (arr[i] == arr[i + 1])
+          {
+            orden = -1;
           }
         }
       }
